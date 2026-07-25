@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tolu — Creative Direction & Spatial Experiences</title>
+  <link rel="stylesheet" href="tolu.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <a href="#" class="brand">Tolu</a>
+    <div class="nav-right">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#portfolio" class="nav-link">Archive</a>
+      <a href="#contact" class="nav-cta">Work With Me</a>
+    </div>
+  </nav>
+
+  <!-- 1. HERO SECTION -->
+  <header class="hero">
+    <div class="hero-container">
+      <span class="hero-subtitle">Creative Direction & Spatial Design</span>
+      <h1 class="hero-title">Designing atmospheres that feel <em>intentional</em> and unforgettable.</h1>
+      <p class="hero-description">Specializing in spatial curation, corporate layout architecture, fashion concept styling, and intimate community hosting.</p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn-primary">View Portfolio</a>
+        <a href="#contact" class="btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. ABOUT SECTION -->
+  <section class="about-section" id="about">
+    <div class="container grid-2col">
+      <div class="about-media">
+        <div class="image-wrapper">
+          <img src="AOU_0216.jpeg" alt="Imaaife hosting curated event">
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="section-tag">About Imaaife</span>
+        <h2 class="section-title">Elevating physical & visual storytelling</h2>
+        <p class="lead-p">Toluwalase Praise Ajagbe is a Nigerian fashion entrepreneur, creative director, and digital innovator who bridges the gap between style and mental health. She is best known as the founder and director of Imaaife Limited, a modern creative hub tailored for fashion brands, stylists, and digital artists</p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SERVICES SECTION -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <span class="section-tag center">Services</span>
+      <h2 class="section-title center">Crafted Capabilities</h2>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="service-num">01</span>
+          <h3>Spatial Architecture & Event Layouts</h3>
+          <p>Strategic setup design for corporate conferences, summits, and panels—maximizing both seating capacity and natural flow.</p>
+        </div>
+
+        <div class="service-card">
+          <span class="service-num">02</span>
+          <h3>Fashion & Styling Concept Direction</h3>
+          <p>Tactile visual moodboards, garment assembly, and lookbook styling tailored for brands and editorial projects.</p>
+        </div>
+
+        <div class="service-card">
+          <span class="service-num">03</span>
+          <h3>Community Curation & Dinner Hosting</h3>
+          <p>Designing and facilitating intimate roundtables, private dinners, and networking sessions designed for genuine dialogue.</p>
+        </div>
+
+        <div class="service-card">
+          <span class="service-num">04</span>
+          <h3>Creative Production & Visual Direction</h3>
+          <p>On-site direction, capturing rich behind-the-scenes atmosphere, and curating cohesive visual narratives.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- 4. FLOATING EDITORIAL GALLERY SECTION -->
+  <section class="portfolio-section" id="portfolio">
+    <div class="container">
+      <div class="portfolio-header">
+        <div>
+          <span class="section-tag">Curated Archive</span>
+          <h2 class="section-title">Selected Works</h2>
+        </div>
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="spatial">Spatial</button>
+          <button class="filter-btn" data-filter="styling">Styling</button>
+          <button class="filter-btn" data-filter="community">Community</button>
+        </div>
+      </div>
+
+      <!-- Floating Gallery Layout -->
+      <div class="floating-gallery">
+        
+        <!-- Item 1: Large Floating Card -->
+        <div class="floating-item float-tilt-left" data-category="spatial">
+          <div class="floating-card">
+            <div class="img-wrapper">
+              <img src="WhatsApp Image 2026-07-24 at 23.35.57.jpeg" alt="Spatial Design Conference">
+            </div>
+            <div class="floating-meta">
+              <span class="item-cat">01 / Spatial Architecture</span>
+              <h4>Podcast show</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Staggered Tall Floating Card -->
+        <div class="floating-item float-tilt-right offset-down" data-category="styling">
+          <div class="floating-card">
+            <div class="img-wrapper contain-mode">
+              <img src="IMG_9278 (1).png" alt="Fashion Moodboard Styling">
+            </div>
+            <div class="floating-meta">
+              <span class="item-cat">02 / Concept Styling</span>
+              <h4>Disabilities Function show</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Floating Card -->
+        <div class="floating-item float-tilt-left" data-category="community">
+          <div class="floating-card">
+            <div class="img-wrapper">
+              <img src="WhatsApp Image 2026-07-24 at 23.40.26 (3).jpeg" alt="Private Dinner Host">
+            </div>
+            <div class="floating-meta">
+              <span class="item-cat">03 / Community</span>
+              <h4>Curated Roundtable & Private Dinner</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Wide Offset Card -->
+        <div class="floating-item float-tilt-right wide-item" data-category="community">
+          <div class="floating-card">
+            <div class="img-wrapper">
+              <img src="IMG_7503.png" alt="Gallery Group Gathering">
+            </div>
+            <div class="floating-meta">
+              <span class="item-cat">04 / Exhibition</span>
+              <h4>Style and identity</h4>
+            </div>
+          </div>
+        </div>
+
+        
+
+      </div>
+    </div>
+  </section>
+
+  </section>
+
+  <!-- 5. FINAL SURPRISE: DRAMATIC EDITORIAL FOOTER & INTERACTIVE SNAPSHOTS -->
+  <section class="final-impact-section" id="contact">
+    <div class="container">
+      
+      <!-- Top Decorative Tag -->
+      <div class="final-tag">
+        <span class="sparkle">✦</span> Ready to Collaborate? <span class="sparkle">✦</span>
+      </div>
+
+      <!-- Giant Editorial Headline -->
+      <h2 class="final-headline">
+        Have an idea in mind? <br>
+        <em>Let’s make it unforgettable.</em>
+      </h2>
+
+      <!-- Magnetic CTA Button -->
+      <div class="cta-wrapper">
+        <a href="mailto:imaaife.com" class="btn-magnetic">
+          <span>Start a Conversation</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Floating Polaroid Strip Visuals -->
+      <div class="polaroid-strip">
+        
+        <div class="polaroid-card tilt-left">
+          <div class="polaroid-img">
+            <img src="WhatsApp Image 2026-07-24 at 23.40.26.jpeg" alt="Behind the scenes gallery">
+          </div>
+          <p class="polaroid-caption">Curating Moments ✦ '26</p>
+        </div>
+
+        <div class="polaroid-card tilt-center float-offset">
+          <div class="polaroid-img">
+            <img src="WhatsApp Image 2026-07-24 at 23.40.26 (4).jpeg" alt="Roundtable dinner host">
+          </div>
+          <p class="polaroid-caption">Intimate Gatherings</p>
+        </div>
+
+        <div class="polaroid-card tilt-right">
+          <div class="polaroid-img contain-fit">
+            <img src="WhatsApp Image 2026-07-24 at 23.40.26 (1).jpeg" alt="Fashion moodboard process">
+          </div>
+          <p class="polaroid-caption">Tactile Moodboards</p>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Sub-Bar -->
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Creative Studio. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Read CV</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container footer-box">
+      <span class="section-tag center">Inquiries</span>
+      <h2 class="footer-title">Let’s collaborate on your next vision.</h2>
+      <a href="mailto:hello@imaaife.com" class="footer-email">hello@imaaife.com</a>
+      <p class="footer-copy">© 2026 IMAAIFE. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const items = document.querySelectorAll('.portfolio-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const cat = btn.getAttribute('data-filter');
+
+        items.forEach(item => {
+          if (cat === 'all' || item.getAttribute('data-category') === cat) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
