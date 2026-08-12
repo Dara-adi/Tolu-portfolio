@@ -762,3 +762,97 @@ body {
     gap: 1.5rem;
   }
 }
+
+/* LINK WRAPPER STYLES FOR FLOATING CARDS */
+.floating-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+/* NEW FILMS SECTION STYLES */
+.films-section {
+  padding: 100px 0;
+}
+
+.films-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.film-card a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.film-thumbnail {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  aspect-ratio: 16 / 9;
+}
+
+.film-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.film-card:hover .film-thumbnail img {
+  transform: scale(1.04);
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding-left: 4px;
+  transition: all 0.3s ease;
+}
+
+.film-card:hover .play-btn {
+  background: #ffffff;
+  color: #000000;
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.film-meta {
+  margin-top: 16px;
+}
+
+.film-cat {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.film-meta h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .films-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
