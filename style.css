@@ -1,0 +1,140 @@
+/* ==========================================================================
+   EVENT 1 — LIGHT MODE & MINI EDITORIAL CARDS
+   ========================================================================== */
+
+/* Crisp, warm light background */
+.event-light-mode {
+  background-color: #f7f5f0;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Slick Minimal Navbar */
+.gallery-nav-light {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  padding: 10px 24px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.back-button-light {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.back-button-light:hover {
+  opacity: 0.6;
+}
+
+.gallery-badge {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #888;
+  border-left: 1px solid #ddd;
+  padding-left: 16px;
+}
+
+/* Compact Gallery Container */
+.mini-gallery-container {
+  max-width: 950px; /* Kept tight so cards stay compact */
+  margin: 0 auto;
+  padding: 140px 20px 80px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 36px;
+  justify-items: center;
+}
+
+/* Mini Polaroid-Style Framed Cards */
+.mini-card {
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  width: 100%;
+  max-width: 380px; /* Mini card sizing constraint */
+}
+
+/* Playful Subtle Tilts */
+.card-tilt-left {
+  transform: rotate(-1.5deg);
+}
+
+.card-tilt-right {
+  transform: rotate(1.8deg) translateY(12px);
+}
+
+.card-inner {
+  width: 100%;
+  aspect-ratio: 4 / 5; /* Clean portrait ratio */
+  overflow: hidden;
+  border-radius: 6px;
+  background: #f0eee9;
+}
+
+.card-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.card-footer {
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #666;
+}
+
+/* Hover Sauce: Card straightens up, scales, and lifts off the page */
+.mini-card:hover {
+  transform: rotate(0deg) scale(1.03) translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.mini-card:hover .card-inner img {
+  transform: scale(1.05);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .card-tilt-left,
+  .card-tilt-right {
+    transform: rotate(0deg) translateY(0);
+  }
+
+  .mini-gallery-container {
+    padding-top: 100px;
+  }
+}
