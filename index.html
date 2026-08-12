@@ -90,27 +90,28 @@ Experiential workshops helping individuals explore body image, identity, confide
     </div>
   </section>
 
- <!-- 4. FLOATING EDITORIAL GALLERY SECTION -->
-  <section class="portfolio-section" id="portfolio">
-    <div class="container">
-      <div class="portfolio-header">
-        <div>
-          <span class="section-tag">Curated Archive</span>
-          <h2 class="section-title">Selected Works</h2>
-        </div>
-        <div class="filter-bar">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="spatial">Spatial</button>
-          <button class="filter-btn" data-filter="styling">Styling</button>
-          <button class="filter-btn" data-filter="community">Community</button>
-        </div>
+<!-- 4. FLOATING EDITORIAL GALLERY SECTION -->
+<section class="portfolio-section" id="portfolio">
+  <div class="container">
+    <div class="portfolio-header">
+      <div>
+        <span class="section-tag">Curated Archive</span>
+        <h2 class="section-title">Selected Works</h2>
       </div>
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="spatial">Spatial</button>
+        <button class="filter-btn" data-filter="styling">Styling</button>
+        <button class="filter-btn" data-filter="community">Community</button>
+      </div>
+    </div>
 
-      <!-- Floating Gallery Layout -->
-      <div class="floating-gallery">
-        
-        <!-- Item 1: Large Floating Card -->
-        <div class="floating-item float-tilt-left" data-category="spatial">
+    <!-- Floating Gallery Layout -->
+    <div class="floating-gallery">
+      
+      <!-- Item 1: Large Floating Card (Links to Event 1 Page) -->
+      <div class="floating-item float-tilt-left" data-category="spatial">
+        <a href="event-1.html" class="floating-card-link">
           <div class="floating-card">
             <div class="img-wrapper">
               <img src="WhatsApp Image 2026-07-24 at 23.35.57.jpeg" alt="Spatial Design Conference">
@@ -120,10 +121,12 @@ Experiential workshops helping individuals explore body image, identity, confide
               <h4>Podcast show</h4>
             </div>
           </div>
-        </div>
+        </a>
+      </div>
 
-        <!-- Item 2: Staggered Tall Floating Card -->
-        <div class="floating-item float-tilt-right offset-down" data-category="styling">
+      <!-- Item 2: Staggered Tall Floating Card (Links to Event 2 Page) -->
+      <div class="floating-item float-tilt-right offset-down" data-category="styling">
+        <a href="event-2.html" class="floating-card-link">
           <div class="floating-card">
             <div class="img-wrapper contain-mode">
               <img src="IMG_9278 (1).png" alt="Fashion Moodboard Styling">
@@ -133,10 +136,12 @@ Experiential workshops helping individuals explore body image, identity, confide
               <h4>Disabilities Function show</h4>
             </div>
           </div>
-        </div>
+        </a>
+      </div>
 
-        <!-- Item 3: Floating Card -->
-        <div class="floating-item float-tilt-left" data-category="community">
+      <!-- Item 3: Floating Card (Links to Event 3 Page) -->
+      <div class="floating-item float-tilt-left" data-category="community">
+        <a href="event-3.html" class="floating-card-link">
           <div class="floating-card">
             <div class="img-wrapper">
               <img src="WhatsApp Image 2026-07-24 at 23.40.26 (3).jpeg" alt="Private Dinner Host">
@@ -146,10 +151,12 @@ Experiential workshops helping individuals explore body image, identity, confide
               <h4>Curated Roundtable & Private Dinner</h4>
             </div>
           </div>
-        </div>
+        </a>
+      </div>
 
-        <!-- Item 4: Wide Offset Card -->
-        <div class="floating-item float-tilt-right wide-item" data-category="community">
+      <!-- Item 4: Wide Offset Card (Links to Event 4 Page) -->
+      <div class="floating-item float-tilt-right wide-item" data-category="community">
+        <a href="event-4.html" class="floating-card-link">
           <div class="floating-card">
             <div class="img-wrapper">
               <img src="IMG_7503.png" alt="Gallery Group Gathering">
@@ -159,7 +166,54 @@ Experiential workshops helping individuals explore body image, identity, confide
               <h4>Style and identity</h4>
             </div>
           </div>
-        </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 5. NEW FILMS SECTION -->
+<section class="films-section" id="films">
+  <div class="container">
+    <div class="portfolio-header">
+      <div>
+        <span class="section-tag">Motion Archive</span>
+        <h2 class="section-title">Films</h2>
+      </div>
+    </div>
+
+    <div class="films-grid">
+      <!-- Film 1 -->
+      <div class="film-card">
+        <a href="https://vimeo.com/" target="_blank" rel="noopener">
+          <div class="film-thumbnail">
+            <img src="WhatsApp Image 2026-07-24 at 23.35.57.jpeg" alt="Film 1 Preview">
+            <span class="play-btn">&#9654;</span>
+          </div>
+          <div class="film-meta">
+            <span class="film-cat">Short Film / Director</span>
+            <h3>Title of the First Film</h3>
+          </div>
+        </a>
+      </div>
+
+      <!-- Film 2 -->
+      <div class="film-card">
+        <a href="https://vimeo.com/" target="_blank" rel="noopener">
+          <div class="film-thumbnail">
+            <img src="IMG_9278 (1).png" alt="Film 2 Preview">
+            <span class="play-btn">&#9654;</span>
+          </div>
+          <div class="film-meta">
+            <span class="film-cat">Documentary / Producer</span>
+            <h3>Title of the Second Film</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
         
 
@@ -265,4 +319,5 @@ Experiential workshops helping individuals explore body image, identity, confide
     });
   </script>
 </body>
+
 </html>
